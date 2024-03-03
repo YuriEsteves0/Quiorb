@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Quiorb" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+        <item name="android:textViewStyle">@style/CustomTextView</item>
+    </style>
+
+    <style name="CustomTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="Theme.Quiorb" parent="Base.Theme.Quiorb" />
+</resources>

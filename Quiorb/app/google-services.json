@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "990358266691",
+    "project_id": "quiorb-7f332",
+    "storage_bucket": "quiorb-7f332.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990358266691:android:334d960822fd85cf3105f6",
+        "android_client_info": {
+          "package_name": "com.yuri.quiorb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCelOqzz4tH0MUKSKU4QEESeEAwEE0Ru_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
