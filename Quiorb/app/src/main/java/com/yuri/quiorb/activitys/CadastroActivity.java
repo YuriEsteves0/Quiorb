@@ -7,12 +7,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.yuri.quiorb.R;
+import com.yuri.quiorb.credentials.Cadastro_email;
+import com.yuri.quiorb.credentials.LoginActivity;
 import com.yuri.quiorb.credentials.NumeroTelActivity;
 import com.yuri.quiorb.helpers.AndroidHelper;
 import com.yuri.quiorb.helpers.FirebaseHelper;
@@ -20,6 +23,7 @@ import com.yuri.quiorb.helpers.FirebaseHelper;
 public class CadastroActivity extends AppCompatActivity {
 
     private LinearLayout btnEntrarNumero, btnEntrarGmail, btnEntrarFacebook;
+    private TextView login;
     private FirebaseAuth auth;
     private GoogleSignInClient client;
 
@@ -31,7 +35,15 @@ public class CadastroActivity extends AppCompatActivity {
         btnEntrarNumero = findViewById(R.id.btnEntrarNumero);
         btnEntrarGmail = findViewById(R.id.btnEntrarGmail);
         btnEntrarFacebook = findViewById(R.id.btnEntrarFacebook);
+        login = findViewById(R.id.login);
         auth = FirebaseHelper.userGetAuth();
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AndroidHelper.trocarIntent(getApplicationContext(), LoginActivity.class);
+            }
+        });
 
         btnEntrarNumero.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,7 +56,7 @@ public class CadastroActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                AndroidHelper.mostrarToast(getApplicationContext(), "Adicionaremos essa função no futuro!");
+                AndroidHelper.trocarIntent(getApplicationContext(), Cadastro_email.class);
             }
         });
 

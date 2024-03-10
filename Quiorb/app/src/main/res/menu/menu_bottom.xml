@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/casa"/>
+    <item android:id="@+id/Loterias"
+        android:title="Loterias"
+        android:icon="@drawable/loterias"/>
+
+    <item android:id="@+id/Dividas"
+        android:title="Dividas"
+        android:icon="@drawable/dividas"/>
+
+    <item android:id="@+id/Conta"
+        android:title="Conta"
+        android:icon="@drawable/conta"/>
+
+</menu>

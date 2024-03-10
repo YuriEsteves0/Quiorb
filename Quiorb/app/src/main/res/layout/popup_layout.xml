@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background_white_15"
+    android:backgroundTint="@color/white"
+    android:padding="15dp">
+
+    <TextView android:id="@+id/topoPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pagar Cartão"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="20sp"/>
+
+    <TextView android:id="@+id/txtCorrido"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Ao clicar em SIM, você será cobrado uma taxa de R$ 25,00 para criar seu novo cartão."
+        android:layout_below="@id/topoPopup"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/txtCorrido"
+        >
+
+        <Button android:id="@+id/btnNao"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:text="Não"
+            android:layout_toStartOf="@id/btnSim"
+            android:background="@drawable/rounded_background_white_15"
+            android:backgroundTint="@color/purpleMain"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            />
+
+        <Button android:id="@+id/btnSim"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:text="SIM"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/btn_style_border_15"
+            android:textColor="@color/purpleMain"
+
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

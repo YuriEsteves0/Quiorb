@@ -2,9 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,6 +20,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quiorb"
         tools:targetApi="31">
+        <activity
+            android:name=".activitys.EscolherCartaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activitys.AdicionarCartaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activitys.CartoesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".credentials.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".credentials.Cadastro_email"
+            android:exported="false" />
+        <activity
+            android:name=".credentials.Confirmar_dados_activity"
+            android:exported="false" />
         <activity
             android:name=".activitys.OtpActivity"
             android:exported="false" />

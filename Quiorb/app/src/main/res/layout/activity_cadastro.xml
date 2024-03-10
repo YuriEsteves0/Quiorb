@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:text="Entre com Gmail"/>
+                android:text="Entre com Email"/>
 
 
         </LinearLayout>
@@ -161,7 +161,7 @@
                 android:textColor="@color/white"
                 android:text="Já tem uma conta? "/>
 
-            <TextView
+            <TextView android:id="@+id/login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"

@@ -15,9 +15,20 @@ public class FirebaseHelper {
         return auth;
     }
 
+    public static String getUID(){
+        return userGetAuth().getCurrentUser().getUid();
+    }
+
     public static DatabaseReference getReference(){
         if(reference == null){
             reference = FirebaseDatabase.getInstance().getReference();
+        }
+        return reference;
+    }
+
+    public static DatabaseReference getReferenceUsuarios(){
+        if(reference == null){
+            reference = getReference().child("usuarios");
         }
         return reference;
     }

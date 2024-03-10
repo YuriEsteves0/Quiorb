@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/rounded_background_white_15"
+                android:backgroundTint="@color/white"
+                android:padding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+                    <LinearLayout android:id="@+id/containerContaTxtFlag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Conta"
+
+                            android:fontFamily="@font/montserrat_bold"/>
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="16dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/flag_brazil"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/moneyCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/containerContaTxtFlag">
+
+
+
+                        <TextView android:id="@+id/dinheiroTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.500,00"
+                            android:textSize="19sp"
+                            android:fontFamily="@font/montserrat_bold"/>
+
+                        <ImageButton android:id="@+id/viewMoney"
+                            android:layout_width="20dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/view"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/moneyCount"
+                        android:layout_alignParentEnd="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ver extrato"
+                            android:textSize="17sp"
+                            android:textColor="@color/purpleMain"/>
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            app:tint="@color/purpleMain"
+                            android:src="@drawable/back"
+                            android:layout_marginStart="5dp"
+                            android:rotation="180"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitXY"
+                        android:padding="20dp"
+                        app:tint="@color/purpleMain"
+                        android:background="@drawable/rounded_background_white_15"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/pix"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pix"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_bold"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/cartoesBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageButton android:id="@+id/cartaoimg"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitXY"
+                        android:padding="20dp"
+                        app:tint="@color/purpleMain"
+                        android:background="@drawable/rounded_background_white_15"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/cartao"/>
+
+                    <TextView android:id="@+id/cartoesTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cartões"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitXY"
+                        android:padding="20dp"
+                        app:tint="@color/purpleMain"
+                        android:background="@drawable/rounded_background_white_15"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/hand"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Limites"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitXY"
+                        android:padding="20dp"
+                        app:tint="@color/purpleMain"
+                        android:background="@drawable/rounded_background_white_15"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/investimento"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Investir"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_bold"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/quiorbad"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minha vida financeira"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginTop="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="50dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="180dp"
+                    android:background="@drawable/rounded_background_white_15"
+                    android:backgroundTint="@color/white"
+                    android:padding="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    >
+                    <TextView android:id="@+id/pontosTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pontos Quiorb"/>
+
+                    <TextView android:id="@+id/qntPontos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_black"
+                        android:text="****"
+                        android:textSize="20sp"
+                        android:layout_below="@id/pontosTxt"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/moeda"
+                        android:layout_below="@id/qntPontos"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="180dp"
+                    android:background="@drawable/rounded_background_white_15"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/fgts"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</FrameLayout>

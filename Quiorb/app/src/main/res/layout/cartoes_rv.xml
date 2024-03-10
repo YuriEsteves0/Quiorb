@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background_white_15"
+    android:backgroundTint="@color/bluedblack"
+    android:layout_marginBottom="30dp"
+    android:padding="22dp">
+
+    <LinearLayout android:id="@+id/topCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/quiorbfoxwhite"/>
+        <TextView android:id="@+id/numeroTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+552197723-0634"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/montserrat"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topCard"
+        android:layout_marginTop="60dp">
+        <TextView android:id="@+id/nomeUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matheus"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <TextView android:id="@+id/sobrenome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" N C"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/nomeUsuario"
+            android:textColor="@color/white"/>
+
+        <TextView android:id="@+id/tipoCartao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/montserrat_black_italic"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

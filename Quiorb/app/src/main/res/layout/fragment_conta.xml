@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ContaFragment">
+
+    <Button android:id="@+id/sairBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAIR"
+        android:background="@drawable/rounded_background_white_15"
+        android:backgroundTint="@color/ruby"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_black"
+        />
+
+</FrameLayout>
